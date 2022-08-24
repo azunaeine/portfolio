@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="/"> Home</a>
+      <a class="hamburger-menu-nav-item" href="/about"> About </a>
+      <a class="hamburger-menu-nav-item" onclick="takeUsDownToCaseStudies()">
+        Projects
+      </a>
+      <a class="hamburger-menu-nav-item">Resume</a>
+    </div>
+
+    <div class="body-wrapper">
+      <nav class="nav-bar">
+        <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+        <script>
+          // function getMyVar(){ return 123 }
+
+          // const mySecretVar = getMyVar()
+
+          // variables
+          // "variable declarations"
+          // "I declare a variable named 'myVar' "
+          const myVar = 123;
+          const myVar2 = "123 hello mom";
+          let myObject = {
+            cat: "meow",
+            age: 23,
+          };
+          const myList = ["how are you", "hey", "milkshake"];
+
+          // "function declarations"
+          // "i declare a function named 'showMenu'"
+          // "a function runs some"
+          function showMenu() {
+            // 1. grab the .hamburger-menu-content element
+            const el = document.querySelector(".hamburger-menu-content");
+            // 2. change the class to include "visible"
+            el.classList.add("visible");
+          }
+          function hideMenu() {
+            // 1. grab the .hamburger-menu-content element
+            const el = document.querySelector(".hamburger-menu-content");
+            // 2. change the class to include "visible"
+            el.classList.remove("visible");
+          }
+        </script>
+        <div class="logo"><img src="img/logosvg.svg" alt="logo" /></div>
+        <a class="nav-item" href="/"> Home</a>
+        <a class="nav-item" href="/about"> About </a>
+        <a class="nav-item" onclick="takeUsDownToCaseStudies()"> Projects </a>
+        <a class="nav-item">Resume</a>
+      </nav>
+      <main class="content">
+        <!-- your content goes here -->
+      </main>
+      <h1 class="name scroll-reveal">Hello, my name is Azuna</h1>
+      <h2 class="intro scroll-reveal">
+        I am a <span class="typing-effect">product designer.</span>
+        <!-- typing effect will type out... -->
+        <!-- front-end developer. -->
+        <!-- jack of all trades! -->
+      </h2>
+      <script>
+        // 1. grab the element
+        const typingSpan = document.querySelector(".typing-effect");
+
+        /** idx of the current phrase we're typing */
+        let phraseIdx = 0;
+        let isTyping = false; // whether we're typing or untyping
+
+        // we'll swap out its text content (innerHTML) one letter at a time like a typing effect...
+        const PHRASES = [
+          "product designer.",
+          "front-end developer.",
+          "jack of all trades!",
+        ];
+
+        // we'll type them out every so often
+        const TYPING_SPEED_INTERVAL = 100;
+        const BACKSPACING_SPEED_INTERVAL = 50;
+
+        // do something every X seconds => setInterval
+
+        function startTypingOrUntyping(speed) {
+          const intervalId = setInterval(function () {
+            // PHRASES[0] starts typed out already, so it first starts "untyping" itself
+            if (isTyping) {
+              // handle typing effect
+
+              typeNextLetter();
+
+              // handle finished typing -> switch to untyping
+              const isDoneTyping =
+                typingSpan.innerHTML.length === PHRASES[phraseIdx].length;
+              if (isDoneTyping) {
+                isTyping = false;
+                // stop the interval and
+                clearInterval(intervalId);
+                // start a new one with BACKSPACING_SPEED_INTERVAL instead
+                startTypingOrUntyping(BACKSPACING_SPEED_INTERVAL);
+              }
+            } else {
+              // handle untyping effect
+
+              untypeLastLetter();
+
+              // handle finished untyping -> switch to typing
+              // if it's the last letter we just untyped, go to the next phrase
+              const isDoneUntyping = typingSpan.innerHTML.length === 0;
+              if (isDoneUntyping) {
+                // go to the next phrase
+                phraseIdx = (phraseIdx + 1) % PHRASES.length;
+
+                isTyping = true;
+                // stop the interval and
+                clearInterval(intervalId);
+                // start a new one with TYPING_SPEED_INTERVAL instead
+                startTypingOrUntyping(TYPING_SPEED_INTERVAL);
+              }
+            }
+          }, speed);
+        }
+
+        // set the innerHTML of typingSpan to be one letter smaller than previously
+        function untypeLastLetter() {
+          const currentLetters = typingSpan.innerHTML;
+          const nextLetters = currentLetters.slice(0, -1);
+          // set the innerHTML to the new letters
+          typingSpan.innerHTML = nextLetters;
+        }
+
+        function typeNextLetter() {
+          const currentLetters = typingSpan.innerHTML;
+          const currentPhrase = PHRASES[phraseIdx];
+          // e.g. currentLetters is "prod", next should be "produ"
+          const nextLetter = currentPhrase[currentLetters.length];
+          const nextLetters = currentLetters + nextLetter;
+          typingSpan.innerHTML = nextLetters;
+        }
+
+        startTypingOrUntyping(BACKSPACING_SPEED_INTERVAL);
+      </script>
+      <img src="img/azunabg.png" alt="azuna" class="me scroll-reveal" />
+
+      <button
+        onclick="takeUsDownToCaseStudies()"
+        class="btn-case-studies scroll-reveal"
+      >
+        View Case Studies
+      </button>
+      <script>
+        function takeUsDownToCaseStudies() {
+          // scroll down to the element with id "case-studies"
+          // 1. grab the element
+          const myContainer = document.querySelector(".container#case-studies");
+          // 2. scrollIntoView({bahavior:"smooth"})
+          myContainer.scrollIntoView({ behavior: "smooth" });
+          // 3. hide the menu
+          hideMenu();
+        }
+      </script>
+
+      <div id="case-studies" class="case-studies container">
+        <a href="/case-study-1" class="case-study bg-one">
+          <div class="words">
+            <h6>UI/UX Design</h6>
+            <h5>Magnitude</h5>
+            <p class="info">
+              An AI dating app that connects people with their matches and helps
+              them interact with their matches in virtual reality.
+            </p>
+          </div>
+          <img src="img/aibb.png" alt="ai" class="cover-image" />
+        </a>
+        <a href="/case-study-2" class="case-study bg-two">
+          <div class="words">
+            <h6>UI/UX Design</h6>
+            <h5>UpoWallet</h5>
+            <p class="info">
+              A mobile application that educates and helps people save money.
+            </p>
+          </div>
+          <img src="img/Upowalletlandrb.png" alt="upo" class="cover-image" />
+        </a>
+        <a href="/case-study-3" class="case-study bg-three">
+          <div class="words">
+            <h6>UI/UX Design</h6>
+            <h5>Muna</h5>
+            <p class="info">
+              A video streaming mobile app that increases the interaction of
+              users by behaving like a social media app.
+            </p>
+          </div>
+          <img src="img/munalandrb.png" alt="muna" class="cover-image" />
+        </a>
+        <footer>
+          <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+            <div class="icon"><i class="fa-brands fa-linkedin"></i></div
+          ></a>
+          <a href="https://github.com/azunaeine" target="_blank"
+            ><div class="icon"><i class="fa-brands fa-github"></i></div
+          ></a>
+          <a href="https://twitter.com/xxxazuna" target="_blank"
+            ><div class="icon"><i class="fa-brands fa-twitter"></i></div
+          ></a>
+          <a href="mailto:azunaeine@gmail.com" target="_blank"
+            ><div class="icon"><i class="fa-solid fa-envelope"></i></div
+          ></a>
+          <div class="copyrighttext">
+            © Azuna Ekundayo <span class="year">2022</span>
+          </div>
+        </footer>
+      </div>
+
+      <script>
+        // update the year to the current year
+        // 1. grab the year span
+        const yearSpan = document.querySelector("span.year");
+        // 2. set the innerHTML = current year
+        const currentYear = new Date().getFullYear();
+        yearSpan.innerHTML = currentYear;
+      </script>
+      <script
+        src="https://kit.fontawesome.com/b85921a939.js"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        // eslint-disable-next-line no-undef
+        ScrollReveal({
+          reset: true,
+          delay: 200,
+          duration: 0.8 * 1000,
+          distance: "20px",
+          easing: "ease-out",
+        }).reveal(".scroll-reveal");
+      </script>
+    </div>
+  </body>
+</html>

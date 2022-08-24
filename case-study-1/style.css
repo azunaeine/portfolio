@@ -1,0 +1,173 @@
+* {
+  font-family: system-ui;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: rgb(59, 59, 59);
+}
+:root {
+  --body-margin: 20px;
+  --hero-background: #f82e4b;
+}
+body {
+  margin: 0 var(--body-margin);
+}
+.image-one {
+  background-color: var(--hero-background);
+  width: 61vw;
+  display: block;
+  margin: 3em auto;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.brief {
+  font-weight: normal;
+  word-spacing: 4px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  color: grey;
+  text-indent: 13px;
+  line-height: 1.5em;
+  margin-left: 4em;
+}
+.tracklist {
+  display: flex;
+  gap: 161px;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.problem {
+  position: relative;
+  top: 11px;
+}
+
+.app {
+  margin-top: 15px;
+}
+
+.main-title {
+  margin-top: 15px;
+}
+
+h4 {
+  list-style-type: none;
+}
+
+.role {
+  list-style-type: none;
+}
+
+.view-one {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tools {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hamburger-menu-content {
+  display: flex;
+  gap: 1.5em;
+  padding: 0.5em 0em;
+  justify-content: flex-end;
+}
+
+a.hamburger-menu-nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+.view-one {
+}
+
+.image-and-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.image-and-text.right {
+  flex-direction: row-reverse;
+}
+.image-and-text img {
+  width: 100%;
+  max-width: 500px;
+}
+.info-section {
+  max-width: 360px;
+}
+.info-section h3 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+.phone-shadow {
+  border-radius: 64px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px #0000004a;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+}
+.flex-row li {
+  line-height: 1.5em;
+}
+.flex-row h4 {
+  margin-bottom: 0.5em;
+}
+.problem-section h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+.problem-section {
+  margin: 1em 0 2em 0;
+}
+
+p {
+  line-height: 2em;
+  color: rgb(97, 97, 97);
+}
+.problem-section.centered p {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+.problem-section.centered {
+  background: rgb(218, 218, 218);
+  margin-left: calc(-1 * var(--body-margin));
+  margin-right: calc(-1 * var(--body-margin));
+  padding: 10px var(--body-margin) 30px var(--body-margin);
+}
+.process-section h2 {
+  margin-bottom: 1em;
+}
+.btn-view {
+  background: var(--hero-background);
+  border: none;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 1px 1px 14px var(--hero-background);
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 0.5em;
+}
+.btn-view:hover {
+  transform: scale(1.05);
+}

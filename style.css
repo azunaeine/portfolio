@@ -1,0 +1,352 @@
+:root {
+  --hero-font-size: 48px;
+  --heading-font-size: 24px;
+  --text-font-size: 16px;
+}
+* {
+  font-family: system-ui;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: var(--text-font-size);
+}
+button {
+  border: none;
+}
+body {
+  background: #ffffff;
+}
+h1.name {
+  text-align: center;
+  font-size: var(--hero-font-size);
+}
+button,
+h2,
+h2 span.typing-effect,
+h5 {
+  font-size: var(--heading-font-size);
+}
+h2.intro {
+  color: black;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+img.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  height: 100%;
+  margin-right: 90%;
+}
+.me {
+  width: 150px;
+  height: 167px;
+  display: flex;
+  align-self: center;
+}
+.case-study {
+  transition: all 0.3s ease-in-out;
+  width: 80vw;
+  height: 540px;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 18px;
+}
+.bg-one {
+  background-color: #ffcccb;
+}
+.bg-two {
+  background-color: #3cb371;
+}
+.bg-three {
+  background-color: #c5b4e3;
+}
+.bg-one:hover {
+  color: white;
+}
+.bg-one .ai {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 48px;
+}
+.bg-two .upowallet {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-one:hover {
+  background-color: #f82e4b;
+  transform: scale(1.04);
+}
+.bg-two:hover {
+  background-color: #009317;
+  transform: scale(1.04);
+}
+.bg-three:hover {
+  background: #8c20bf;
+  transform: scale(1.04);
+}
+
+.bg-three .muna {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  right: 12px;
+  top: 15px;
+}
+
+.btn-case-studies {
+  font-weight: normal;
+  background: #000000;
+  color: #ffffff;
+  padding: 1em 1.4em;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-studies {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+nav.nav-bar {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  padding: 0.5em 0em;
+  width: 80vw;
+  margin: auto;
+}
+.logo {
+  flex-grow: 1;
+}
+
+.copyrighttext {
+  flex-grow: 1;
+  text-align: right;
+  display: inline;
+  margin-right: 17px;
+}
+.body-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main.content {
+  flex-grow: 1;
+}
+/* footer "border-top" pseudo-element */
+/* footer:after {
+  content: "";
+  position: absolute;
+  border: black;
+  height: 100%;
+  width: 100%;
+} */
+footer {
+  background-color: black;
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding: 0.7em 1em;
+}
+.icon {
+  color: white;
+}
+.icon:hover {
+  color: #0fabcd;
+}
+.icon i {
+  font-size: 21px;
+}
+.btn-hamburger-menu {
+  font-size: 24px;
+}
+.copyrighttext {
+  color: white;
+  margin-top: 5px;
+}
+
+.fa-linkedin {
+  margin-left: 21px;
+}
+
+.logo {
+  width: 98px;
+  height: 33px;
+}
+
+h5 {
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+/* this targets the h5 on hover */
+/* target the h5 when you hover on .bg-one */
+.case-study:hover .words > * {
+  color: #ffffff;
+}
+
+p.info {
+  color: #000000;
+  margin-top: 1em;
+}
+
+p.info:hover {
+  color: white;
+}
+.words h6 {
+  margin-bottom: 0.5em;
+}
+h6 {
+  color: #272727;
+  font-weight: 300;
+}
+body > div > nav > i.fa-bars {
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.hamburger-menu-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: white;
+  color: black;
+  z-index: 1;
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.hamburger-menu-content.visible {
+  /* display: flex; */
+  opacity: 1;
+
+  pointer-events: all;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a.hamburger-menu-nav-item {
+  color: #000000;
+}
+
+/* when the hamburger menu is not visible, the menu items are offset a little bit from their positions */
+.hamburger-menu-nav-item {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease-in-out; /* animate the values if they change */
+}
+/* when the hamburger menu is visible, the menu-items move back from their initial offset positions */
+.hamburger-menu-content.visible .hamburger-menu-nav-item {
+  transform: translateX(0px);
+  opacity: 1;
+}
+/* on mouseover, transform a little bit */
+.hamburger-menu-content.visible .hamburger-menu-nav-item:active {
+  transform: scale(1.05) rotate(2deg);
+  transition-delay: 0s !important;
+}
+
+/* we can also add some transition delays so they animate in a sequence: */
+
+/* the first menu-item gets 0.2s delay */
+.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+/* second menu-item gets 0.3s delay */
+.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+/* third menu-item gets 0.4s delay */
+.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+/* fourth menu-item gets 0.5s delay */
+.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(4) {
+  transition-delay: 0.5s;
+}
+
+/* OVERRIDES - only the DIFFERENCES - just enough to make it responsive */
+
+/* mobile width and below */
+@media screen and (max-width: 768px) {
+  body > div > nav > i.fa-bars {
+    display: block;
+  }
+  .nav-item {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+  }
+  .logo img {
+    margin-right: 0;
+    margin-top: 0.5em;
+  }
+  h1.name {
+    margin-top: 1em;
+    padding: 0 0.5em;
+  }
+}
+
+/* desktop width and above */
+@media (min-width: 1024px) {
+  .case-study {
+    width: 80vw;
+  }
+}
+
+/* this CSS applies ABOVE 580 px */
+@media (min-width: 580px) {
+  .case-study {
+    width: calc(100% - 64px);
+    padding: 2em;
+    width: 80vw;
+  }
+}
