@@ -29,7 +29,6 @@ body {
   color: grey;
   text-indent: 13px;
   line-height: 1.5em;
-  margin-left: 4em;
 }
 .tracklist {
   display: flex;
@@ -91,32 +90,34 @@ a.hamburger-menu-nav-item {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 90px;
+  gap: 1em;
 }
 
 .image-and-text.right {
   flex-direction: row-reverse;
 }
+img {
+  margin-top: 36px !important;
+  margin-bottom: 36px !important;
+  width: 100%;
+
+  max-width: 900px;
+}
 .image-and-text img {
   width: 100%;
   max-width: 500px;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 .info-section {
   max-width: 360px;
 }
-.info-section h3 {
+h3 {
   margin-bottom: 0.5em;
-  font-size: 2em;
+  font-size: 36px;
 }
 
-.image-wrapper img {
-  width: 100%;
-}
-.phone-shadow {
-  border-radius: 64px;
-  overflow: hidden;
-  box-shadow: 0px 0px 15px #0000004a;
-}
 .flex-row {
   display: flex;
   justify-content: center;
@@ -138,6 +139,7 @@ a.hamburger-menu-nav-item {
 }
 
 p {
+  font-size: 18px;
   line-height: 2em;
   color: rgb(97, 97, 97);
 }
@@ -147,13 +149,22 @@ p {
   max-width: 600px;
 }
 .problem-section.centered {
-  background: rgb(218, 218, 218);
-  margin-left: calc(-1 * var(--body-margin));
-  margin-right: calc(-1 * var(--body-margin));
-  padding: 10px var(--body-margin) 30px var(--body-margin);
+  position: relative;
+  padding: 10px 0 30px 0;
 }
-.process-section h2 {
-  margin-bottom: 1em;
+.problem-section.centered:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: -10000px;
+  right: -10000px;
+  top: 0;
+  bottom: 0;
+  background: #fbfbfb;
+}
+h2 {
+  font-size: 48px;
+  margin-bottom: 43px;
 }
 .btn-view {
   background: var(--hero-background);
@@ -170,4 +181,44 @@ p {
 }
 .btn-view:hover {
   transform: scale(1.05);
+}
+
+ol {
+  line-height: 2em;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.insights {
+  margin-top: 2em;
+}
+p.box-one {
+  background: #f82e4b;
+  border-radius: 8px;
+  line-height: 2em;
+}
+
+.group-3 {
+  width: 27em;
+  display: flex;
+  margin: auto;
+}
+.images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+
+  margin-top: 36px;
+  margin-bottom: 72px;
+}
+.images-grid img {
+  width: 21%;
+  border-radius: 3vw;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.bold {
+  font-weight: bold;
 }

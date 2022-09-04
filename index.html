@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="globalStyle.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -203,47 +203,48 @@
           </div>
           <img src="img/munalandrb.png" alt="muna" class="cover-image" />
         </a>
-        <footer>
-          <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-            <div class="icon"><i class="fa-brands fa-linkedin"></i></div
-          ></a>
-          <a href="https://github.com/azunaeine" target="_blank"
-            ><div class="icon"><i class="fa-brands fa-github"></i></div
-          ></a>
-          <a href="https://twitter.com/xxxazuna" target="_blank"
-            ><div class="icon"><i class="fa-brands fa-twitter"></i></div
-          ></a>
-          <a href="mailto:azunaeine@gmail.com" target="_blank"
-            ><div class="icon"><i class="fa-solid fa-envelope"></i></div
-          ></a>
-          <div class="copyrighttext">
-            © Azuna Ekundayo <span class="year">2022</span>
-          </div>
-        </footer>
       </div>
-
-      <script>
-        // update the year to the current year
-        // 1. grab the year span
-        const yearSpan = document.querySelector("span.year");
-        // 2. set the innerHTML = current year
-        const currentYear = new Date().getFullYear();
-        yearSpan.innerHTML = currentYear;
-      </script>
-      <script
-        src="https://kit.fontawesome.com/b85921a939.js"
-        crossorigin="anonymous"
-      ></script>
-      <script>
-        // eslint-disable-next-line no-undef
-        ScrollReveal({
-          reset: true,
-          delay: 200,
-          duration: 0.8 * 1000,
-          distance: "20px",
-          easing: "ease-out",
-        }).reveal(".scroll-reveal");
-      </script>
     </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div
+      ></a>
+      <a href="https://github.com/azunaeine" target="_blank"
+        ><div class="icon"><i class="fa-brands fa-github"></i></div
+      ></a>
+      <a href="https://twitter.com/xxxazuna" target="_blank"
+        ><div class="icon"><i class="fa-brands fa-twitter"></i></div
+      ></a>
+      <a href="mailto:azunaeine@gmail.com" target="_blank"
+        ><div class="icon"><i class="fa-solid fa-envelope"></i></div
+      ></a>
+      <div class="copyrighttext">
+        © Azuna Ekundayo <span class="year">2022</span>
+      </div>
+    </footer>
+
+    <script>
+      // update the year to the current year
+      // 1. grab the year span
+      const yearSpan = document.querySelector("span.year");
+      // 2. set the innerHTML = current year
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = currentYear;
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // eslint-disable-next-line no-undef
+      ScrollReveal({
+        reset: true,
+        delay: 200,
+        duration: 0.8 * 1000,
+        distance: "20px",
+        easing: "ease-out",
+      }).reveal(".scroll-reveal");
+    </script>
   </body>
 </html>

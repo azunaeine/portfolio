@@ -13,9 +13,7 @@
 button {
   border: none;
 }
-body {
-  background: #ffffff;
-}
+
 h1.name {
   text-align: center;
   font-size: var(--hero-font-size);
@@ -59,7 +57,8 @@ img.cover-image {
 }
 .case-study {
   transition: all 0.3s ease-in-out;
-  width: 80vw;
+  width: 100%;
+
   height: 540px;
   padding: 20px;
   border-radius: 4px;
@@ -127,6 +126,7 @@ img.cover-image {
   display: flex;
   align-self: center;
   justify-content: center;
+  width: 100%;
 }
 
 .nav-item {
@@ -139,45 +139,24 @@ nav.nav-bar {
   gap: 1.5em;
   align-items: center;
   padding: 0.5em 0em;
-  width: 80vw;
+  max-width: 960px;
+  width: 100%;
   margin: auto;
 }
 .logo {
   flex-grow: 1;
 }
 
-.copyrighttext {
-  flex-grow: 1;
-  text-align: right;
-  display: inline;
-  margin-right: 17px;
-}
 .body-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 960px;
 }
 main.content {
   flex-grow: 1;
 }
-/* footer "border-top" pseudo-element */
-/* footer:after {
-  content: "";
-  position: absolute;
-  border: black;
-  height: 100%;
-  width: 100%;
-} */
-footer {
-  background-color: black;
-  width: 100vw;
-  height: auto;
-  margin: auto;
-  position: relative;
-  display: flex;
-  gap: 20px;
-  padding: 0.7em 1em;
-}
+
 .icon {
   color: white;
 }
@@ -189,10 +168,6 @@ footer {
 }
 .btn-hamburger-menu {
   font-size: 24px;
-}
-.copyrighttext {
-  color: white;
-  margin-top: 5px;
 }
 
 .fa-linkedin {
@@ -338,15 +313,12 @@ a.hamburger-menu-nav-item {
 /* desktop width and above */
 @media (min-width: 1024px) {
   .case-study {
-    width: 80vw;
   }
 }
 
 /* this CSS applies ABOVE 580 px */
 @media (min-width: 580px) {
   .case-study {
-    width: calc(100% - 64px);
     padding: 2em;
-    width: 80vw;
   }
 }
