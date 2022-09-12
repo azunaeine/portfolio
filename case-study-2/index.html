@@ -13,14 +13,66 @@
     <div class="hamburger-menu-content">
       <a class="hamburger-menu-nav-item" href="/"> Home</a>
       <a class="hamburger-menu-nav-item" href="/about"> About </a>
-      <a class="hamburger-menu-nav-item" href="/#case-studies"> Projects </a>
-      <a class="hamburger-menu-nav-item">Resume</a>
+      <a class="hamburger-menu-nav-item" href="/#case-studies" >
+        Projects
+      </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
     </div>
+    <nav class="nav-bar">
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <script>
+        // function getMyVar(){ return 123 }
+
+        // const mySecretVar = getMyVar()
+
+        // variables
+        // "variable declarations"
+        // "I declare a variable named 'myVar' "
+        const myVar = 123;
+        const myVar2 = "123 hello mom";
+        let myObject = {
+          cat: "meow",
+          age: 23,
+        };
+        const myList = ["how are you", "hey", "milkshake"];
+
+        // "function declarations"
+        // "i declare a function named 'showMenu'"
+        // "a function runs some"
+        function showMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.add("visible");
+        }
+        function hideMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.remove("visible");
+        }
+      </script>
+     <div class="logo"> <a href="/"><img src="/img/logosvg.svg" alt="logo" /></a></div>
+      <a class="nav-item" href="/"> Home</a>
+      <a class="nav-item" href="/about"> About </a>
+      <a class="nav-item" href="/#case-studies"> Projects </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </nav>
 
     <h1 class="main-title">UI/UX Design</h1>
     <h2 class="app">Upowallet</h2>
     <h3 class="brief">
-      Inflation has sharply increased over the years. Covid, the Ukrainian war and the shortage of  goods has put pressure on consumers because the prices of goods have become unaffordable. Upowallet aims to help people budget and find unique ways to save money by ensuring that their financial goals are met. 
+      Inflation has sharply increased over the years. Covid, the Ukrainian war and the shortage of goods has put pressure on consumers. As a result of this, the prices of goods have become unaffordable for people. Upowallet aims to help people budget and find unique ways to save money by ensuring that their financial goals are met. 
 
     </h3>
     <img src="/img/upowalletlandrb.png" alt="ai" class="image-one" />
@@ -60,7 +112,7 @@
       </div>
       <div>
         <h4>Prototype</h4>
-        <a target="_blank" href="https://www.figma.com/proto/GhlrLanaNuiqSO85mhtOVM/Magnitude?node-id=2%3A142&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A142&show-proto-sidebar=1"><button class="btn-view">View</button></a>
+        <a target="_blank" href="https://www.figma.com/proto/l4ZDBpDReGNV6dfc4mKyx9/UpoWallet?node-id=202%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=202%3A2"><button class="btn-view">View</button></a>
       </div>
     </div>
     <div class="problem-section">
@@ -70,6 +122,8 @@
 
 
       </p>
+      <h3 class="subinfo"> Canada’s inflation rate has increased to 8.1%
+      </h3>
     </div>
     <div class="problem-section centered">
       <h2 class="challenge-1">Challenge</h2>
@@ -122,7 +176,7 @@
     </div>
 
     <div class="image-and-text left">
-      <div class="image-wrapper phone-shadow">
+      <div class="img-wrapper phone-shadow">
         <img src="/img/dashboard.svg" alt="image-one" class="nearby-map" />
       </div>
       <div class="info-section info-two">
@@ -138,33 +192,40 @@
 
     <div class="process-section">
       <h2>Process</h2>
-      <div class="image-wrapper">
+      <div class="img-wrapper">
         <img src="/img/processtwo.svg" alt="image-one" class="nearby-map" />
       </div>
     </div>
 
     <div class="interview">
       <h3 class="user-research">User Research</h3>
+      <h4 class="inter"> Interviews</h4>
       <p class="interview">
         To get a better understanding of  people’s spending patterns and the ways they save  money, I conducted 2 user interviews. These interviews were primarily focused on students and working adults as they were the two groups that were primarily concerned with how much they spent money and budgeted it. When interviewing this two groups, we wanted to assess three questions: 
 
 
       </p>
-      <ul>
-        <ol>
+      <ol>
+        <li>
           How much do you spend daily or weekly?
 
-        </ol>
-        <ol>
+        </li>
+        <li>
           How much money do you save per day or per week?
 
-        </ol>
-        <ol>
+        </li>
+        <li>
           Do you use budgeting apps or any resources to help you save money? 
 
-        </ol>
-      </ul>
+        </li>
+      </ol>
     </div>
+    <div class="persona">
+      <h3 class="persona">Persona</h3>
+      <p class="persona-info">
+        Since working adults were most likely to  spend more money than students. I used the results from the interviews I conducted and created one persona reflecting a working adult. This helped to guide my design process. 
+ </p>
+ <img src="/img/personaone.svg" class="persona-one">
     <div class="insights">
       <h3 class="insights">Insights</h3>
       <p class="info-one">
@@ -174,47 +235,133 @@
       <img src="/img/diagrammoney.svg" alt="group" class="group-3" />
     </div>
       </div>
+      <div class="concepts">
+        <h2 class="con"> Exploring Concepts</h2>
+        <p class="concepts"> I reviewed all the features that I came up with for Upowallet. I began to reflect about how unique each feature was on the app. In this process, I wanted to arrange the features into two app concepts to find the best solution for the problem. 
+        </p>
+        <div class="container">
+        <img src="/img/conceptone.svg">
+        <img src="/img/concepttwo.svg">
+      </div>
+      </div>
       <div class="brainstorming">
         <h2 class="design"> Design</h2>
         <h3 class="brainstorming"> Brainstorming</h3>
         <p class="brain-one">
           The insights that I collected from the interviews helped us improve our features in our application. Furthermore, these insights I collected from the interviews helped us identify weak spots in our application. I created a diagram comparing the insights from the interviews to the features we wanted to use to address the user’s needs. 
-          <img src="/img/diagramupo.svg" alt="diagram-three" class="diagram-three" />
-        </p>
+       </p>
+        <p class="brain-img"> <img src="/img/diagramupo.svg" alt="diagram-three" class="diagram-three" /></p>
+        
         <div class="wireframe">
           <h2 class="wireframe"> Wireframe</h2>
-          <p class="wireframe"> Me and my teammate started creating low-fidelity wireframes to help us have a visual idea of what we wanted the mobile application to look like. In addition, we created low-fidelity wireframes to have an idea of the features we wanted to prioritize in our application.  The low fidelity wireframe was divided into three sections which are the onboarding, the profile settings, and the profile screen. </p>
+          <p class="wireframe"> I created a low fidelity wireframe to help me have a visual idea of what my mobile application would look like. 
+
+          </p>
           <div class="images-grid">
-            <img class="phone-shadow" src="/img/picone.svg">
-            <img class="phone-shadow" src="/img/pictwo.svg">
-            <img class="phone-shadow" src="/img/picthree.svg">
-            <img class="phone-shadow" src="/img/picfour.svg">
-            <img class="phone-shadow" src="/img/picfive.svg">
-            <img class="phone-shadow" src="/img/picsix.svg">
-            <img class="phone-shadow" src="/img/picseven.svg">
-            <img class="phone-shadow" src="/img/piceight.svg">
+            <img class="phone-shadow" src="/img/wireframe-one.svg">
+            <img class="phone-shadow" src="/img/wireframe-two.svg">
+            <img class="phone-shadow" src="/img/wireframe-three.svg">
+            <img class="phone-shadow" src="/img/wireframe-four.svg">
           </div>
         </div>
-        <div class="visualsystem">
-          <h2 class="visualsystem"> Visual System</h2>
-          <p class="visual">We completed our wireframe and were satisfied with our mobile application's look and structure. From there, we began to think about the visual system. Our primary aim was to use a colour palette that was simple and not too strong.  </p>
-          <img src="/img/Group 180.svg">
+        <div class="userflow">
+          <h2 class="userflow"> User Flow</h2>
+          <p class="userflow"> This userflow helped me visualize and structure my application. 
+          </p>
+          <img src="/img/userflow.svg">
         </div>
         <div class="highfi">
           <h2 class="highfi"> High Fidelity Design</h2>
-          <p class="high-fi">The high-fidelity design helped me and my partner have a good idea of what our mobile application would like with the presence of colours. I also wanted to test for usability so I wanted my high-fidelity design to be completely polished and look good. 
-            </p> 
+          <p class="high-fi"> The high-fidelity design helped me  have a good idea of what my mobile application would like with the presence of colours. 
+         </p> 
             
           <div class="images-grid">
-            <img class="phone-shadow" src="/img/imgone.svg">
-            <img class="phone-shadow" src="/img/imgtwo.svg">
-            <img class="phone-shadow" src="/img/imgthree.svg">
-            <img class="phone-shadow" src="/img/imgfour.svg">
-            <img class="phone-shadow" src="/img/imgfive.svg">
-            <img class="phone-shadow" src="/img/imgsix.svg">
-            <img class="phone-shadow" src="/img/imgseven.svg">
-            <img class="phone-shadow" src="/img/imgeight.svg">
+            <img class="phone-shadow" src="/img/hione.svg">
+            <img class="phone-shadow" src="/img/hitwo.svg">
+            <img class="phone-shadow" src="/img/hithree.svg">
+            <img class="phone-shadow" src="/img/hifour.svg">
+            <img class="phone-shadow" src="/img/hifive.svg">
+            <img class="phone-shadow" src="/img/hisix.svg">
+            <img class="phone-shadow" src="/img/hiseven.svg">
+            <img class="phone-shadow" src="/img/hieight.svg">
           </div>
-         
+          
+          <h2 class="iterations"> Design Iterations</h2>
+          <h3 class="iterations-brief"> I made several design iterations to my screen, especially the home screen of my mobile application. 
+
+          </h3>
+          <div class="image-and-text left">
+            <div class="img-wrapper phone-shadow">
+              <img src="/img/oldhome.svg" alt="image-one" class="nearby-map" />
+              
+            </div>
+
+            <img src="/img/x.svg" class="x">
+
+            <div class="info-section info-two">
+              <h3 class="feauture-two"> Old Home Screen</h3>
+              <div class="xclone">
+               
+              <p class="detail-two">
+                This home screen looks unappealing visually and the logo is not properly sized. The page is too long and the setup section is hard to notice because it's at the bottom of the homepage. There are two get started buttons which makes the page more confusing for the user to navigate. 
+                 
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="image-and-text right">
+            <div class="img-wrapper phone-shadow">
+              <img src="/img/newhome.svg" alt="image-two" class="image-two" />
+            </div>
+            <img src="/img/checkmark.svg" class="check" />
+            <div class="info-section info-one">
+              <h3 class="feauture-one"> New Home Screen</h3>
+                <p class="detail-one">
+                The homescreen page is visually appealing and the get started button is easily noticeable. Futhermore, the logo is properly sized. 
+              </p>
+               </div>
+            </div>
+           
+          
+          <!-- <div class="iterations">
+            <h2 class="iterations"> Design Iterations</h2>
+            <p class="iterations"> I made several design iterations to my screen especially the homescreen of my mobile application.</p>
+            <div class="xclone">
+            <img src="/img/oldhome.svg" class="oldhome">
+            <img src="/img/x.svg" class="x">
+            <p class="xinfo"> This homescreen looks unappealing visually and the logo is not properly sized. The page is too long and the setup section is hard to notice because it's at the bottom of the screen. There are two  buttons called get started which makes the page more confusing for the user to navigate. 
+            </p>
+          </div> -->
+        
+          <div class="reflection">
+            <h2 class="reflection"> Reflection</h2>
+            <h3 class="learn"> What I Learned</h3>
+            <p> <span class="bold">Determination:</span> I learned that a person must have a determined spirit  to make significant strides in a project. I was completely overwhelmed and stressed out when I was  working on this project. I often had to iterate my designs because my initial designs did not look good or appealing. 
+
+              </p>
+          </div>
+          <div class="spacer"></div>
+
+            <footer>
+            <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+              <div class="icon"><i class="fa-brands fa-linkedin"></i></div
+            ></a>
+            <a href="https://github.com/azunaeine" target="_blank"
+              ><div class="icon"><i class="fa-brands fa-github"></i></div
+            ></a>
+            <a href="https://twitter.com/xxxazuna" target="_blank"
+              ><div class="icon"><i class="fa-brands fa-twitter"></i></div
+            ></a>
+            <a href="mailto:azunaeine@gmail.com" target="_blank"
+              ><div class="icon"><i class="fa-solid fa-envelope"></i></div
+            ></a>
+            <div class="copyrighttext">
+              © Azuna Ekundayo <span class="year">2022</span>
+            </div>
+          </footer>
+          <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

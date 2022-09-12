@@ -28,6 +28,7 @@ h2.intro {
   color: black;
   letter-spacing: 0.02em;
   text-align: center;
+  font-size: 24px;
 }
 .container {
   display: flex;
@@ -40,15 +41,10 @@ img.cover-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
+  bottom: 32px;
 }
-.logo {
-  display: flex;
-  justify-content: center;
-}
-.logo img {
-  height: 100%;
-  margin-right: 90%;
-}
+
 .me {
   width: 150px;
   height: 167px;
@@ -134,19 +130,6 @@ img.cover-image {
   color: black;
 }
 
-nav.nav-bar {
-  display: flex;
-  gap: 1.5em;
-  align-items: center;
-  padding: 0.5em 0em;
-  max-width: 960px;
-  width: 100%;
-  margin: auto;
-}
-.logo {
-  flex-grow: 1;
-}
-
 .body-wrapper {
   min-height: 100vh;
   display: flex;
@@ -155,28 +138,6 @@ nav.nav-bar {
 }
 main.content {
   flex-grow: 1;
-}
-
-.icon {
-  color: white;
-}
-.icon:hover {
-  color: #0fabcd;
-}
-.icon i {
-  font-size: 21px;
-}
-.btn-hamburger-menu {
-  font-size: 24px;
-}
-
-.fa-linkedin {
-  margin-left: 21px;
-}
-
-.logo {
-  width: 98px;
-  height: 33px;
 }
 
 h5 {
@@ -204,110 +165,6 @@ p.info:hover {
 h6 {
   color: #272727;
   font-weight: 300;
-}
-body > div > nav > i.fa-bars {
-  display: none;
-  position: absolute;
-  right: 6px;
-  top: 6px;
-}
-
-.hamburger-menu-content {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: white;
-  color: black;
-  z-index: 1;
-  /* display: none; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4em;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-
-  pointer-events: none;
-}
-
-.hamburger-menu-content.visible {
-  /* display: flex; */
-  opacity: 1;
-
-  pointer-events: all;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-a.hamburger-menu-nav-item {
-  color: #000000;
-}
-
-/* when the hamburger menu is not visible, the menu items are offset a little bit from their positions */
-.hamburger-menu-nav-item {
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s ease-in-out; /* animate the values if they change */
-}
-/* when the hamburger menu is visible, the menu-items move back from their initial offset positions */
-.hamburger-menu-content.visible .hamburger-menu-nav-item {
-  transform: translateX(0px);
-  opacity: 1;
-}
-/* on mouseover, transform a little bit */
-.hamburger-menu-content.visible .hamburger-menu-nav-item:active {
-  transform: scale(1.05) rotate(2deg);
-  transition-delay: 0s !important;
-}
-
-/* we can also add some transition delays so they animate in a sequence: */
-
-/* the first menu-item gets 0.2s delay */
-.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(1) {
-  transition-delay: 0.2s;
-}
-/* second menu-item gets 0.3s delay */
-.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(2) {
-  transition-delay: 0.3s;
-}
-/* third menu-item gets 0.4s delay */
-.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(3) {
-  transition-delay: 0.4s;
-}
-/* fourth menu-item gets 0.5s delay */
-.hamburger-menu-content.visible .hamburger-menu-nav-item:nth-child(4) {
-  transition-delay: 0.5s;
-}
-
-/* OVERRIDES - only the DIFFERENCES - just enough to make it responsive */
-
-/* mobile width and below */
-@media screen and (max-width: 768px) {
-  body > div > nav > i.fa-bars {
-    display: block;
-  }
-  .nav-item {
-    display: none;
-  }
-  .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: fit-content;
-  }
-  .logo img {
-    margin-right: 0;
-    margin-top: 0.5em;
-  }
-  h1.name {
-    margin-top: 1em;
-    padding: 0 0.5em;
-  }
 }
 
 /* desktop width and above */

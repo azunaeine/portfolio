@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/globalStyle.css" />
+
+    <title>Muna</title>
+  </head>
+  <body>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="/"> Home</a>
+      <a class="hamburger-menu-nav-item" href="/about"> About </a>
+      <a class="hamburger-menu-nav-item" href="/#case-studies">
+        Projects
+      </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <script>
+        // function getMyVar(){ return 123 }
+
+        // const mySecretVar = getMyVar()
+
+        // variables
+        // "variable declarations"
+        // "I declare a variable named 'myVar' "
+        const myVar = 123;
+        const myVar2 = "123 hello mom";
+        let myObject = {
+          cat: "meow",
+          age: 23,
+        };
+        const myList = ["how are you", "hey", "milkshake"];
+
+        // "function declarations"
+        // "i declare a function named 'showMenu'"
+        // "a function runs some"
+        function showMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.add("visible");
+        }
+        function hideMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.remove("visible");
+        }
+      </script>
+     <div class="logo"> <a href="/"><img src="/img/logosvg.svg" alt="logo" /></a></div>
+      <a class="nav-item" href="/"> Home</a>
+      <a class="nav-item" href="/about"> About </a>
+      <a class="nav-item" href="/#case-studies"> Projects </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </nav>
+
+    <h1 class="main-title">UI/UX Design</h1>
+    <h2 class="app">Muna</h2>
+      <h3 class="brief">
+        Video streaming  enables people to watch video content without turning on their television. It has provided people with flexibility and a way to access video content from any location besides their living room or any room with a television. However, many video streaming mobile applications struggle to create a public space of interaction between  users. People are not able to interact or share their opinions about certain movies and tv shows in an online video streaming mobile application as this  feature does not exist in many video streaming  mobile applications.  
+  
+      </h3>
+    <img src="/img/munalandrb.png" alt="muna" class="image-one" />
+
+    <!-- <div class="tracklist">
+      <h4>Team</h4>S
+      <h4>Timeline</h4>
+      <h4>Prototype</h4>
+    </div> -->
+
+    <div class="flex-row">
+      <div>
+        <h4>Role</h4>
+        <ul>
+          <li>User Research,</li>
+          <li>Visual Design,</li>
+          <li>UX Design</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li>Figma</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Timeline</h4>
+        <ul>
+          <li>18 weeks</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Team</h4>
+        <ul>
+          <li>Azuna Ekundayo</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Prototype</h4>
+        <a target="_blank" href="https://www.figma.com/proto/GhlrLanaNuiqSO85mhtOVM/Magnitude?node-id=2%3A142&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A142&show-proto-sidebar=1"><button class="btn-view">View</button></a>
+      </div>
+    </div>
+    <div class="problem-section">
+      <h3 class="background"> Problem</h3>
+      <p class="describe">
+        Video streaming has been a demanding platform for many years. However, many video streaming apps  possess many flaws as they fail to connect the experience of social media and video  streaming. Muna is a video streaming platform that aims to connect a community of users and offer the experience of video streaming. 
+
+
+      </p>
+    </div>
+    <div class="problem-section centered">
+      <h2 class="challenge-1">Challenge</h2>
+      <p class="brief-two">
+        How do I design a video streaming app that bridges the gap between social media and video streaming? 
+      </p>
+    </div>
+    <div class="problem-section">
+      <h3 class="solution">Solution</h3>
+      <p class="brief-three">
+        In response to the problem, I developed a mobile application called  Muna. Muna is a video streaming app that bridges the gap between social media and video streaming. Muna does this by displaying some unique features that are quite prevalent in some social media apps. These features present in Muna are newsfeed, messages and groups. In addition,  these features provide an enhanced virtual experience for the user with the presence of video streaming on the platform. 
+
+
+
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <div class="image-and-text left">
+      <div class="img-wrapper phone-shadow">
+        <img src="/img/chatting.svg" alt="image-one" class="nearby-map" />
+      </div>
+      <div class="info-section info-two">
+        <h3 class="feauture-two">Chatting</h3>
+        <p class="detail-two">
+          This allows users to chat with other users on the mobile application.
+
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="image-and-text right">
+      <div class="img-wrapper phone-shadow">
+        <img src="/img/tvstreaming.svg" alt="image-two" class="image-two" />
+      </div>
+      <div class="info-section info-one">
+        <h3 class="feauture-one"> Video streaming</h3>
+        <p class="detail-one">
+          This allows users to stream movies and videos while actively interacting with other users on that mobile application page. 
+
+        </p>
+      </div>
+    </div>
+
+    <div class="image-and-text left">
+      <div class="img-wrapper phone-shadow">
+        <img src="/img/groups.svg" alt="chat" class="chat" />
+      </div>
+      <div class="info-section info-two">
+        <h3 class="feauture-two"> Groups</h3>
+        <p class="detail-two">
+          This gives users the freedom to access communities in the mobile application platform and engage with other users by sharing posts related to that community. 
+
+        </p>
+      </div>
+    </div>
+
+    <div class="process-section">
+      <h2>Process</h2>
+      <div class="img-wrapper">
+        <img src="/img/processthree.svg" alt="image-one"  />
+      </div>
+    </div>
+
+    <div class="comp-an">
+      <h3 class="user-research">User Research</h3>
+      <h4 class="comp"> Competitive Analysis</h4>
+      <p class="comp">
+        I looked at other  mobile applications that promoted or utilized video streaming. I analyzed each application and looked at their pros and cons. In addition, I listed the pros and cons of each video streaming app. While doing this,  I was able to have  a better understanding of the problem at hand. 
+
+      </p>
+      <div class="stream-live">
+     <img src="/img/disney.svg" class="disney">
+     <img src="/img/netflix.svg" class="netflix">
+     <img src="/img/tubi.svg" class="tubi">
+    </div>
+
+    <div class="personas">
+      <h3 class="persona">Personas</h3>
+      <p class="persona-one">
+        Since working adults were most likely to  spend more money than students. I used the results from the interviews I conducted and created one persona reflecting a working adult. This helped to guide my design process. 
+      <div class="persona-container">
+       <img src="/img/persona-one.svg">
+       <img src="/img/persona-two.svg">
+      </div>
+      </p>
+    </div>
+    <div class="brain">
+      <h3 class="brain-storming"> Brainstorming</h3>
+      <p class="brain-storming">
+        I utilized the personas to create features that I wanted to address and implement in the mobile application. I noticed in my competitor analysis that there weren't any mobile applications that incorporated video streaming and  interactivity with other users on the platform. I began to ask myself a question after reviewing my competitor analysis, <span id="bold"> how do I design a video streaming app that bridges the gap between social media and video streaming? </span>
+         <h5 class="list-3"> Here are some of the features I listed to help me find the solution:</h5>
+        <div class="feature-container">
+        <img src="/img/feature-one.svg">
+        <img src="/img/feature-two.svg">
+        <img src="/img/feature-three.svg">
+      </div>
+      </p>
+        <div class="wireframe">
+          <h2 class="wireframe"> Wireframe</h2>
+          <p class="wireframe"> I created low-fidelity wireframes to help me have a visual idea of what I wanted the mobile application to look like. In addition, the low-fidelity wireframe helped me organize all my design ideas. </p>
+          <div class="images-grid">
+            <img class="phone-shadow" src="/img/text.svg">
+            <img class="phone-shadow" src="/img/pictwo.svg">
+            <img class="phone-shadow" src="/img/picthree.svg">
+            <img class="phone-shadow" src="/img/picfour.svg">
+            <img class="phone-shadow" src="/img/picfive.svg">
+            <img class="phone-shadow" src="/img/picsix.svg">
+            <img class="phone-shadow" src="/img/picseven.svg">
+            <img class="phone-shadow" src="/img/piceight.svg">
+          </div>
+        </div>
+        <div class="visualsystem">
+          <h2 class="visualsystem"> Visual System</h2>
+          <p class="visual">I completed the low-fidelity wireframe and I was happy with the mobile application's look.   From there, I proceeded with the visual system. The visual system helped me think of the colours to add to the mobile application.  </p>
+          <img src="/img/visual-two.svg">
+        </div>
+        <div class="highfi">
+          <h2 class="highfi"> High Fidelity Design</h2>
+          <p class="high-fi">The high-fidelity design helped me  have a good idea of what my mobile application would look like with the presence of colours.  
+            </p> 
+            
+          <div class="images-grid">
+            <img class="phone-shadow" src="/img/imgone.svg">
+            <img class="phone-shadow" src="/img/imgtwo.svg">
+            <img class="phone-shadow" src="/img/imgthree.svg">
+            <img class="phone-shadow" src="/img/imgfour.svg">
+            <img class="phone-shadow" src="/img/imgfive.svg">
+            <img class="phone-shadow" src="/img/imgsix.svg">
+            <img class="phone-shadow" src="/img/imgseven.svg">
+            <img class="phone-shadow" src="/img/imgeight.svg">
+          </div>
+         
+          
+          <div class="reflection">
+            <h2 class="reflection-muna"> Reflection</h2>
+             <p class="muna-brief">Overall, I was proud of Muna. I felt that Muna was the solution to the challenge. Muna is the perfect bridge between
+              video streaming and interactivity. Muna defies other video streaming applications that are current in today's market.
+              </p>
+              
+          </div>
+          <div class="spacer"></div>
+
+          <footer>
+            <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+              <div class="icon"><i class="fa-brands fa-linkedin"></i></div
+            ></a>
+            <a href="https://github.com/azunaeine" target="_blank"
+              ><div class="icon"><i class="fa-brands fa-github"></i></div
+            ></a>
+            <a href="https://twitter.com/xxxazuna" target="_blank"
+              ><div class="icon"><i class="fa-brands fa-twitter"></i></div
+            ></a>
+            <a href="mailto:azunaeine@gmail.com" target="_blank"
+              ><div class="icon"><i class="fa-solid fa-envelope"></i></div
+            ></a>
+            <div class="copyrighttext">
+              © Azuna Ekundayo <span class="year">2022</span>
+            </div>
+          </footer>
+          <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

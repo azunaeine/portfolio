@@ -16,50 +16,61 @@
       <a class="hamburger-menu-nav-item" onclick="takeUsDownToCaseStudies()">
         Projects
       </a>
-      <a class="hamburger-menu-nav-item">Resume</a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
     </div>
+    <nav class="nav-bar">
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <script>
+        // function getMyVar(){ return 123 }
 
+        // const mySecretVar = getMyVar()
+
+        // variables
+        // "variable declarations"
+        // "I declare a variable named 'myVar' "
+        const myVar = 123;
+        const myVar2 = "123 hello mom";
+        let myObject = {
+          cat: "meow",
+          age: 23,
+        };
+        const myList = ["how are you", "hey", "milkshake"];
+
+        // "function declarations"
+        // "i declare a function named 'showMenu'"
+        // "a function runs some"
+        function showMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.add("visible");
+        }
+        function hideMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.remove("visible");
+        }
+      </script>
+      <div class="logo">
+        <a href="/"><img src="/img/logosvg.svg" alt="logo" /></a>
+      </div>
+      <a class="nav-item" href="/"> Home</a>
+      <a class="nav-item" href="/about"> About </a>
+      <a class="nav-item" onclick="takeUsDownToCaseStudies()"> Projects </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </nav>
     <div class="body-wrapper">
-      <nav class="nav-bar">
-        <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-        <script>
-          // function getMyVar(){ return 123 }
-
-          // const mySecretVar = getMyVar()
-
-          // variables
-          // "variable declarations"
-          // "I declare a variable named 'myVar' "
-          const myVar = 123;
-          const myVar2 = "123 hello mom";
-          let myObject = {
-            cat: "meow",
-            age: 23,
-          };
-          const myList = ["how are you", "hey", "milkshake"];
-
-          // "function declarations"
-          // "i declare a function named 'showMenu'"
-          // "a function runs some"
-          function showMenu() {
-            // 1. grab the .hamburger-menu-content element
-            const el = document.querySelector(".hamburger-menu-content");
-            // 2. change the class to include "visible"
-            el.classList.add("visible");
-          }
-          function hideMenu() {
-            // 1. grab the .hamburger-menu-content element
-            const el = document.querySelector(".hamburger-menu-content");
-            // 2. change the class to include "visible"
-            el.classList.remove("visible");
-          }
-        </script>
-        <div class="logo"><img src="img/logosvg.svg" alt="logo" /></div>
-        <a class="nav-item" href="/"> Home</a>
-        <a class="nav-item" href="/about"> About </a>
-        <a class="nav-item" onclick="takeUsDownToCaseStudies()"> Projects </a>
-        <a class="nav-item">Resume</a>
-      </nav>
       <main class="content">
         <!-- your content goes here -->
       </main>

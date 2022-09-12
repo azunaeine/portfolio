@@ -11,11 +11,63 @@
   </head>
   <body>
     <div class="hamburger-menu-content">
-      <a class="hamburger-menu-nav-item" href="/"> Home</a>
+      <a class="hamburger-menu-nav-item" href="/"> Home</a> 
       <a class="hamburger-menu-nav-item" href="/about"> About </a>
-      <a class="hamburger-menu-nav-item" href="/#case-studies"> Projects </a>
-      <a class="hamburger-menu-nav-item">Resume</a>
+      <a class="hamburger-menu-nav-item" href="/#case-studies">
+        Projects
+      </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
     </div>
+    <nav class="nav-bar">
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <script>
+        // function getMyVar(){ return 123 }
+
+        // const mySecretVar = getMyVar()
+
+        // variables
+        // "variable declarations"
+        // "I declare a variable named 'myVar' "
+        const myVar = 123;
+        const myVar2 = "123 hello mom";
+        let myObject = {
+          cat: "meow",
+          age: 23,
+        };
+        const myList = ["how are you", "hey", "milkshake"];
+
+        // "function declarations"
+        // "i declare a function named 'showMenu'"
+        // "a function runs some"
+        function showMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.add("visible");
+        }
+        function hideMenu() {
+          // 1. grab the .hamburger-menu-content element
+          const el = document.querySelector(".hamburger-menu-content");
+          // 2. change the class to include "visible"
+          el.classList.remove("visible");
+        }
+      </script>
+     <div class="logo"> <a href="/"><img src="/img/logosvg.svg" alt="logo" /></a></div>
+      <a class="nav-item" href="/"> Home</a>
+      <a class="nav-item" href="/about"> About </a>
+      <a class="nav-item" href="/#case-studies"> Projects </a>
+      <a
+        href="https://drive.google.com/file/d/1L_GT5e22smvIpAZj9nVYqiQ1o2RHfSnC/view?usp=sharing"
+        class="nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </nav>
 
     <h1 class="main-title">UI/UX Design</h1>
     <h2 class="app">Magnitude</h2>
@@ -98,19 +150,18 @@
 
     <br />
     <br />
-
     <div class="image-and-text left">
       <div class="img-wrapper phone-shadow">
-        <img src="/img/chat.svg" alt="chat" class="chat" />
+        <img src="/img/image-one.svg" alt="image-one" class="nearby-map" />
       </div>
       <div class="info-section info-two">
-        <h3 class="feauture-two">Messaging</h3>
+        <h3 class="feauture-two">Location</h3>
         <p class="detail-two">
-          This enables potential matches in the AI dating app to message each
-          other.
+          Helps users find nearby users and potential matches through the map.
         </p>
       </div>
     </div>
+    
 
     <div class="image-and-text right">
       <div class="img-wrapper phone-shadow">
@@ -126,26 +177,28 @@
     </div>
 
     <div class="image-and-text left">
-      <div class="image-wrapper phone-shadow">
-        <img src="/img/image-one.svg" alt="image-one" class="nearby-map" />
+      <div class="img-wrapper phone-shadow">
+        <img src="/img/chat.svg" alt="chat" class="chat" />
       </div>
       <div class="info-section info-two">
-        <h3 class="feauture-two">Location</h3>
+        <h3 class="feauture-two">Messaging</h3>
         <p class="detail-two">
-          Helps users find nearby users and potential matches through the map.
+          This enables potential matches in the AI dating app to message each
+          other.
         </p>
       </div>
     </div>
 
     <div class="process-section">
       <h2>Process</h2>
-      <div class="image-wrapper">
+      <div class="img-wrapper">
         <img src="/img/processone.svg" alt="image-one" class="nearby-map" />
       </div>
     </div>
 
     <div class="interview">
       <h3 class="user-research">User Research</h3>
+      <h4 class="interview"> Interviews</h4>
       <p class="interview">
         In order to understand people's online dating experience in a better
         perspective and to find ways to improve their dating experience
@@ -153,17 +206,17 @@
         involved people who were in a long-term relationship. Our primary aim
         for interviewing came when analyzing and assessing three questions:
       </p>
-      <ul>
-        <ol>
+      <ol>
+        <li>
           How did they display intimacy when on dating apps?
-        </ol>
-        <ol>
+        </li>
+        <li>
           How often did they use dating apps?
-        </ol>
-        <ol>
+        </li>
+        <li>
           Why do they use dating apps?
-        </ol>
-      </ul>
+        </li>
+      </ol>
     </div>
     <div class="insights">
       <h3 class="insights">Insights</h3>
@@ -188,7 +241,7 @@
         analyze the data. We came up with a venn diagram to connect our ideas.
       </p>
       <div class="image-and-text right">
-        <div class="image-wrapper">
+        <div class="img-wrapper">
           <img src="/img/vennone.svg" alt="image-one" class="nearby-map" />
         </div>
       </div>
@@ -197,8 +250,9 @@
         <h3 class="brainstorming"> Brainstorming</h3>
         <p class="brain-one">
           The insights that I collected from the interviews helped us improve our features in our application. Furthermore, these insights I collected from the interviews helped us identify weak spots in our application. I created a diagram comparing the insights from the interviews to the features we wanted to use to address the user’s needs. 
-          <img src="/img/diagram-three.svg" alt="diagram-three" class="diagram-three" />
-        </p>
+        </p>  
+        <img src="/img/diagram-three.svg" alt="diagram-three" class="diagram-three" />
+        
         <div class="wireframe">
           <h2 class="wireframe"> Wireframe</h2>
           <p class="wireframe"> Me and my teammate started creating low-fidelity wireframes to help us have a visual idea of what we wanted the mobile application to look like. In addition, we created low-fidelity wireframes to have an idea of the features we wanted to prioritize in our application.  The low fidelity wireframe was divided into three sections which are the onboarding, the profile settings, and the profile screen. </p>
@@ -216,7 +270,7 @@
         <div class="visualsystem">
           <h2 class="visualsystem"> Visual System</h2>
           <p class="visual">We completed our wireframe and were satisfied with our mobile application's look and structure. From there, we began to think about the visual system. Our primary aim was to use a colour palette that was simple and not too strong.  </p>
-          <img src="/img/Group 180.svg">
+          <p class="visual-img"><img src="/img/Group 180.svg"></p>
         </div>
         <div class="highfi">
           <h2 class="highfi"> High Fidelity Design</h2>
@@ -257,5 +311,28 @@
               
               </p>
           </div>
+          <div class="spacer"></div>
+          <footer>
+            <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+              <div class="icon"><i class="fa-brands fa-linkedin"></i></div
+            ></a>
+            <a href="https://github.com/azunaeine" target="_blank"
+              ><div class="icon"><i class="fa-brands fa-github"></i></div
+            ></a>
+            <a href="https://twitter.com/xxxazuna" target="_blank"
+              ><div class="icon"><i class="fa-brands fa-twitter"></i></div
+            ></a>
+            <a href="mailto:azunaeine@gmail.com" target="_blank"
+              ><div class="icon"><i class="fa-solid fa-envelope"></i></div
+            ></a>
+            <div class="copyrighttext">
+              © Azuna Ekundayo <span class="year">2022</span>
+            </div>
+          </footer>
+          <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    
   </body>
 </html>
