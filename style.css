@@ -167,6 +167,15 @@ h6 {
   font-weight: 300;
 }
 
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five,
+.img-six {
+  width: 100%;
+}
+
 /* desktop width and above */
 @media (min-width: 1024px) {
   .case-study {
