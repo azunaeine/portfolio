@@ -262,3 +262,7 @@ h5.list-3 {
 .phone-shadow {
   box-shadow: none !important;
 }
+
+h4.comp {
+  font-size: 1.4em;
+}
