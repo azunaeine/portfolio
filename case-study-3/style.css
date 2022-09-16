@@ -257,3 +257,7 @@ h5.list-3 {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
+
+.phone-shadow {
+  box-shadow: none !important;
+}
